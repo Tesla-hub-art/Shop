@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport"
+     content="width=device-width,initial-scale=1.0">
+    <title>Marché en ligne</title>
+    <style>
+        body {
+            font-family: 'Segoe UI',Arial sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+                
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;/*permet le apassage à la ligne automatique*/
+            justify-content: center;
+            gap: 20px;
+        }
+        .produits-card {
+                background: white;
+                width: 280px;
+                margin: 20px auto;
+                padding: 15px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0,1);
+                text-align: center;
+                transition: transform 0.3s ease;
+        }
+        .produits-card:hover {
+            transform: translateY(-5px); /*Petit effet au survol*/
+        }
+        .produits-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;/* Evite de deformaer les images*/
+            border-radius: 8px;
+        }
+        .prix {
+            font-size: 1.2em;
+            color: #27ae60;
+            font-weight: bold;
+            margin: 15px 0;
+            }
+            .btn-whatsapp {
+                display: block;
+                background: #25D366;/*Couleur officielle WhatsApp*/
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            .btn-whatsapp:hover{
+            background:#128C7E;
+          }
+            </style>
+        </head>
+    </body>
+     <header>
+         <h1>Ma Boutique Guinéenne </h1>
+     </header>
+
+      <div class="container">
+     <div class="produits-card">
+        <img src="static/Images/2.jpg"
+        alt="Photo chaussure">
+        <h3>Chaussures Nike</h3>
+        <div class="prix">500.000 GNF</div>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+     <div class="produits-card">
+        <img src="static/Images/4.jpg"
+        alt="Photo chaussure">
+        <h3>Chaussures Nike</h3>
+        <div class="prix">300.000 GNF</div>
+        <a
+    href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
+    class="btn-whatsapp" target="_blank">
+            Commander via whatsApp
+        </a>
+    </div>
+    </div>
+
+    </body>
+    </html>
