@@ -50,6 +50,29 @@
             object-fit: cover;/* Evite de deformaer les images*/
             border-radius: 8px;
         }
+        .btn-panier {
+                background: linear-gradient(135 deg,#25D366,#128C7E);
+                color: white;
+                border: none;
+                padding: 12px 18px;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .btn-panier:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            opacity: 0.95;
+        }
+        .btn-panier:active{
+            transform: scale(0.98);
+        }
         .prix {
             font-size: 1.2em;
             color: #27ae60;
@@ -92,7 +115,7 @@
         alt="Photo chaussure">
         <h3>Chaussures Nike</h3>
         <div class="prix">300.000 GNF</div>
-        <button onclick="ajouterAuPanier('Chaussures Nike',300.000)">Ajouter au panier</button>
+        <button class="btn-panier" onclick="ajouterAuPanier('Chaussures Nike',300.000)">Ajouter au panier</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
     class="btn-whatsapp" target="_blank">
