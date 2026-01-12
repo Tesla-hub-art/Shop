@@ -81,6 +81,7 @@
         alt="Photo chaussure">
         <h3>Chaussures Nike</h3>
         <div class="prix">500.000 GNF</div>
+        <button onclick="ajouterAuPanier('Chaussures Nike',500.000)">Ajouter au panier</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
     class="btn-whatsapp" target="_blank">
@@ -91,12 +92,20 @@
         alt="Photo chaussure">
         <h3>Chaussures Nike</h3>
         <div class="prix">300.000 GNF</div>
+        <button onclick="ajouterAuPanier('Chaussures Nike',300.000)">Ajouter au panier</button>
         <a
     href="https://wa.me/611476352?text=Bonjour,jr veux Commander ce produit" 
     class="btn-whatsapp" target="_blank">
             Commander via whatsApp
         </a>
     </div>
+    <hr>
+    <h2>Mon Panier</h2>
+    <div id="panier"></div>
+    <h3 id="total"></h3>
+    <button onclick="commanderWhatsApp()">Commander via WhatsApp</button>
+
+    <script src="script.js"></script>
     </div>
 
     </body>
